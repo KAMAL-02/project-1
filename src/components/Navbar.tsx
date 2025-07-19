@@ -22,7 +22,7 @@ const Navbar = () => {
           <a href="#" className="text-black transition-colors">Courses</a>
           <a href="#" className="text-black transition-colors">Job Board</a>
           <a href="#" className="text-black transition-colors">Colleges</a>
-          <a href="#" className="text-black transition-colors">Pricing</a>
+          <a href="#" className="text-black transition-colors">Practise</a>
           <a href="#" className="text-black transition-colors">About Us</a>
           <div className="relative group">
             <a href="#" className="text-black transition-colors flex items-center gap-1">
