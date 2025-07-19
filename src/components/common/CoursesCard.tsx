@@ -1,5 +1,5 @@
 import { MoveUpRight } from "lucide-react";
-import Bookmark from "@/assets/images/bookmark.svg";
+import Bookmark from "@/assets/images/Bookmark.svg";
 
 interface CoursesCardProps {
   heading: string;
