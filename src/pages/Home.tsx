@@ -16,12 +16,18 @@ const Home = () => {
         <Navbar />
         <HeroText />
       </div>
-    
-      <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/4" style={{ top: 'calc(100vh - 100px)' }}>
-        <img src={hero} alt="Hero" className="w-full h-[700px] object-contain" />
+
+      <div
+        className="w-2/3 sm:w-auto absolute left-1/2 transform -translate-x-1/2 -translate-y-1/4 top-[calc(100vh-100px)] md:top-[calc(100vh-100px)] lg:top-[calc(100vh-100px)]"
+      >
+        <img
+          src={hero}
+          alt="Hero"
+          className="w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] object-contain"
+        />
       </div>
-      
-      <div className="bg-white min-h-96 mt-92">
+
+      <div className="bg-white min-h-96 mt-40 sm:mt-92">
         <WhatWeOffer />
         <ExploreCourses />
         <PartnerWithTopUniversities />
