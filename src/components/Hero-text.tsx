@@ -2,8 +2,8 @@ import CommonButton from "./common/Button";
 
 const HeroText = () => {
   return (
-    <section className="text-center max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-12 mt-4 md:mt-8">
-      <h1 className="font-poppins text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#000000] leading-tight mb-4 md:mb-6">
+   <section className="text-center max-w-4xl mx-auto px-6 py-12 mt-8">
+      <h1 className="font-poppins text-2xl md:text-3xl lg:text-4xl font-medium text-[#000000] leading-tight mb-6">
         <div>Unlock Your Career And</div>
         <div>
           Gateway To{" "}
@@ -13,12 +13,12 @@ const HeroText = () => {
         </div>
       </h1>
 
-      <p className="text-black text-xs sm:text-sm md:text-lg max-w-xl mx-auto mb-6 md:mb-8">
+     <p className="text-black text-sm md:text-lg max-w-xl mx-auto mb-8">
         Dive into a world of learning and career growth right from the top. Our
         intuitive menu connects you to courses, jobs, universities, and more,
         ensuring you never miss a beat.
       </p>
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-7 mt-6 md:mt-8">
+       <div className="flex flex-col sm:flex-row justify-center items-center gap-7 mt-8">
         <CommonButton text="Browse Courses" />
         <CommonButton text="Find Jobs" />
         <CommonButton text="Enter Competition" />
