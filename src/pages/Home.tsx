@@ -2,10 +2,11 @@ import Navbar from "@/components/Navbar";
 import HeroText from "@/components/Hero-text";
 import hero from "@/assets/images/hero.svg";
 import OurJourneySection from "@/components/OurJourneySection";
+import DiscoverPowerSection from "@/components/DiscoverPowerSection";
 import ExploreCourses from "@/components/ExploreOurCourses";
 import PartnerWithTopUniversities from "@/components/PartnerWithTopUniversities";
 import AiMockExams from "@/components/AiMockExams";
-import UsersReview from "@/components/UsersReview";
+import UserReviewShowcase from "@/components/UserReviewShowcase";
 import Footer from "@/components/Footer";
 import FindYourJob from "@/components/FindYourDreamJob";
 
@@ -33,7 +34,8 @@ const Home = () => {
         <PartnerWithTopUniversities />
         <FindYourJob />
         <AiMockExams />
-        <UsersReview />
+        <UserReviewShowcase />
+        <DiscoverPowerSection />
         <Footer />
       </div>
     </div>

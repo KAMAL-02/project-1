@@ -126,3 +126,17 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* University Logo Slider Animation */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.university-logo-slider:hover {
+  animation-play-state: paused;
+}
