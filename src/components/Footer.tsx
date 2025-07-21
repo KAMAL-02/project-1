@@ -4,10 +4,7 @@ import CommonButton from "./common/Button";
 const Footer = () => {
   return (
     <footer 
-      className="px-6 md:px-12 lg:px-16 py-8"
-      style={{
-        background: "linear-gradient(295deg, #FDFDFD 16.05%, #E0EBFD 29.63%, #CCDFFF 63.58%, #FDFDFD 83.95%)"
-      }}
+      className="px-6 md:px-12 lg:px-16 py-8 bg-white"
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
