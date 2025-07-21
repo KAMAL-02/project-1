@@ -29,39 +29,7 @@ const testimonials = [
   },
 ];
 
-const stats = [
-  { value: 15000, label: "Hours saved annually", suffix: "K+" },
-  { value: 2, label: "Candidates evaluated", suffix: "x" },
-];
-
 const AUTO_SLIDE_INTERVAL = 5000;
-
-function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
-  const [display, setDisplay] = useState(0);
-  useEffect(() => {
-    let start = 0;
-    const end = value;
-    if (start === end) return;
-    let increment = end / 60;
-    let current = start;
-    const timer = setInterval(() => {
-      current += increment;
-      if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
-        setDisplay(end);
-        clearInterval(timer);
-      } else {
-        setDisplay(Math.round(current));
-      }
-    }, 15);
-    return () => clearInterval(timer);
-  }, [value]);
-  return (
-    <span className="font-playfair text-3xl md:text-4xl text-blue-700 font-bold">
-      {display}
-      {suffix}
-    </span>
-  );
-}
 
 const UserReviewShowcase = () => {
   const [current, setCurrent] = useState(0);
@@ -71,7 +39,9 @@ const UserReviewShowcase = () => {
     intervalRef.current = setInterval(() => {
       setCurrent((prev) => (prev + 1) % testimonials.length);
     }, AUTO_SLIDE_INTERVAL);
-    return () => intervalRef.current && clearInterval(intervalRef.current);
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
   }, []);
 
   const goTo = (idx: number) => setCurrent(idx);
