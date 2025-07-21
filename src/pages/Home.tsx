@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import HeroText from "@/components/Hero-text";
 import hero from "@/assets/images/hero.svg";
-import WhatWeOffer from "@/components/WhatWeOffer";
+import OurJourneySection from "@/components/OurJourneySection";
 import ExploreCourses from "@/components/ExploreOurCourses";
 import PartnerWithTopUniversities from "@/components/PartnerWithTopUniversities";
 import AiMockExams from "@/components/AiMockExams";
@@ -28,7 +28,7 @@ const Home = () => {
       </div>
 
       <div className="bg-white min-h-96 mt-40 sm:mt-92">
-        <WhatWeOffer />
+        <OurJourneySection />
         <ExploreCourses />
         <PartnerWithTopUniversities />
         <FindYourJob />
