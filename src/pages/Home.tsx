@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import HeroText from "@/components/Hero-text";
 import hero from "@/assets/images/hero.svg";
 import OurJourneySection from "@/components/OurJourneySection";
+import DiscoverPowerSection from "@/components/DiscoverPowerSection";
 import ExploreCourses from "@/components/ExploreOurCourses";
 import PartnerWithTopUniversities from "@/components/PartnerWithTopUniversities";
 import AiMockExams from "@/components/AiMockExams";
@@ -34,6 +35,7 @@ const Home = () => {
         <FindYourJob />
         <AiMockExams />
         <UsersReview />
+        <DiscoverPowerSection />
         <Footer />
       </div>
     </div>
